@@ -60,6 +60,14 @@ class Feature extends GeoJson
     }
 
     /**
+     * @param  int|string|null  $id
+     */
+    public function setId($id): void
+    {
+        $this->id = $id;
+    }
+
+    /**
      * Return the identifier for this Feature object.
      *
      * @return int|string|null
