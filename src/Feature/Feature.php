@@ -77,6 +77,11 @@ class Feature extends GeoJson
         return $this->properties;
     }
 
+    public function setProperties(?array $properties): void
+    {
+        $this->properties = $properties;
+    }
+
     public function jsonSerialize(): array
     {
         $json = parent::jsonSerialize();
