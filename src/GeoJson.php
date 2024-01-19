@@ -47,6 +47,11 @@ abstract class GeoJson implements JsonSerializable, JsonUnserializable
         return $this->boundingBox;
     }
 
+    public function setBoundingBox(?array $boundingBox): void
+    {
+        $this->boundingBox = $boundingBox;
+    }
+
     /**
      * Return the CoordinateReferenceSystem for this GeoJson object.
      */
